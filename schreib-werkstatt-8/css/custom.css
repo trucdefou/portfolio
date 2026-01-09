@@ -107,4 +107,35 @@ p {
     position: relative;         /* parent container for overlay */
     overflow: hidden;           /* hide zoom overflow */
 }
+@media (max-width: 768px) {
+    .box_inner {
+      width: 90% !important;
+      margin: 0 auto !important;
+    }
+    .tokyo_tm_portfolio .portfolio_list li {
+      width: 100%;
+      padding-left: 0px !important;
+    }
+    p {
+  font-size: 14px;
+}
 
+}
+
+.author-name { 
+    font-size: 12px;
+    font-weight: 800;
+    color: #525252;
+}
+
+.null-margin {
+    margin: 0px !important;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.email-span {
+    min-width: 10px !important;
+}
