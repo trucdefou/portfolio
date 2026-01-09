@@ -30,3 +30,81 @@
     width: 100%;
   }
 }
+
+
+.author-card .list_wrapper ul li .inner {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    float: left;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
+    padding: 45px 30px 40px 30px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.tokyo_tm_portfolio .author-ul li {
+    margin: 0px 0px 40px 0px;
+    float: left;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.tokyo_tm_services .list ul li .title {
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+.nullpadding {
+    padding: 0px !important;
+}
+
+.img-animation {
+    transition: transform 0.25s ease-in-out;
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+.img-animation:hover {
+    transform: scale(1.1);
+} 
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;           /* adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    pointer-events: none;       /* so image hover still works */
+    z-index: 2;                 /* make sure text is on top */
+}
+
+.hover-container {
+    position: relative;         /* parent container for overlay */
+    overflow: hidden;           /* hide zoom overflow */
+}
+
