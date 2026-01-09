@@ -139,3 +139,51 @@ p {
 .email-span {
     min-width: 10px !important;
 }
+
+
+.author-portrait.hover-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+.author-portrait.hover-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.author-portrait.hover-container:hover img {
+    transform: scale(1.05); /* Optional: slight zoom on hover */
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Allows clicking through overlay to the link */
+}
+
+.author-portrait.hover-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.author-name-hover {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 0.5px;
+}
