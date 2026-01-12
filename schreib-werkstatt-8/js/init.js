@@ -545,3 +545,9 @@ function tokyo_tm_owl_carousel(){
 		}
 	});
 }
+
+document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault(); // prevents the context menu
+    }
+});
